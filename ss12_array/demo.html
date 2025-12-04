@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // nhập mảng từ bàn phím có đội dài n<=20
+    // + nhập độ dài của mảng ( nguyên dương, n>0 ,n<=20)
+    let n;
+    do {
+        n = +prompt("Nhập độ dài n");
+    }while (n<=0||n>20||!Number.isInteger(n));
+    // tiếp tục nhập phần tử cho mảng.
+    let array =[];
+    for (let i = 0; i <n ; i++) {
+        array.push(+prompt("nhập phần tử thứ :" +i))
+    }
+    alert(array);
+    let evenCount =0; // đếm pt chẵn
+    let oddCount =0; // đếm pt lẻ
+
+    for (let i = 0; i <array.length ; i++) {
+        if (array[i]%2===0){
+            evenCount++;
+        }else {
+            oddCount ++;
+        }
+    }
+    if (evenCount ===oddCount){
+        alert("OK");
+    }else {
+        alert("NO");
+    }
+
+    // tính tổng các pt có index là SNT
+    // let sum =0;
+    // for (let k = 0; k <array.length ; k++) {
+    //     // kiểm trả k có phải là snt?
+    //     if (kiemTraSNT(k)){
+    //        sum +=array[k];
+    //     }
+    // }
+    // alert("Tổng các pt ở có vị trí index là snt : "+ sum);
+    //
+    // function kiemTraSNT(number){
+    //     if (number<2){
+    //         return false;
+    //     }
+    //     for (let i = 2; i <number ; i++) {
+    //         if (number%i===0){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="moneyUSD" placeholder="Nhập số tiền USD">
+<button onclick="chuyenTien()">Chuyển tiền</button>
+<h3 id="result">Kết quả: </h3>
+<script>
+    // input: prompt, input bằng thẻ html(thẻ input)
+    // document.getElementById("id").value = value;
+    // output: alert, console.log(), document.write(),
+    // document.getElementById("id").inneText /innerHtml = value;
+
+    // chuyển đổi tiền tệ từ USD => VND
+
+    // B1 : nhập số tiền (moneyUSD)
+    // B2 : tính toán => chuyển đổi moneyUSD * 25 000 =>moneyVND
+    // B3: hiể thị kết quả
+    // cách 1 không sử dụng html chỉ sử dụng js
+    // let moneyUSD = prompt("Nhập số tiền USD");
+    // // tính toán
+    // let moneyVND = moneyUSD* 25000;
+    // // hiển thị só tiê VND
+    //  alert("Số tiền VND là : " +moneyVND);
+
+    // cách 2 : sử dụng html và js
+    function chuyenTien() {
+        // công việc sẽ làm
+        let moneyUSD = +document.getElementById("moneyUSD").value;
+        let moneyVND = moneyUSD * 25000;
+        // // hiển thị só tiê VND
+        document.getElementById("result").innerText = "Kết quả: " + moneyVND;
+        // alert("Số tiền VND là : " +moneyVND);
+    }
+
+    // let diemToan = +prompt("nhập toán");
+    // let diemLy = +prompt("nhập lý");
+    // let tongDiem = diemToan + diemLy;
+    // alert(tongDiem);
+</script>
+</body>
+</html>

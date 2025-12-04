@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Số nguyên: ...-2,-1,0,1,2,3...
+    // N: 0,1,2,3,4,5,6,7,....
+    // snt 2,3,5,7,11, là số tự nhiên : chỉ chia hết cho 1 và chính nó ( có 2 ước) khác 1
+    // let number = +prompt("nhập số cần kiểm tra");
+    // // number là số nguyên tố khi number chỉ chia hết cho 1 và chính nó ( có 2 ước)
+    // // lần lượt chia no cho các số từ 1,2,3,4,...,n)
+
+
+    let soLuongSNT = 0;
+    let number = 2;
+    while (soLuongSNT <20) {
+        // kiểm number cos phải là snt hay không
+        // nếu có thì in ra và tang soLuongSNT++;
+        let soLuongUoc = 0;// đếm ước ( số lần chia hết)
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                soLuongUoc++;
+            }
+        }
+        if (soLuongUoc == 0) {
+            console.log(number);
+            soLuongSNT++;
+        }
+        number++;
+    }
+
+
+    // số 100;
+
+    while (soLuongSNT <20) {
+        // kiểm number cos phải là snt hay không
+        // nếu có thì in ra và tang soLuongSNT++;
+        let flag = true; // cho nó số nguyên tố
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+               flag = false;
+               break;
+            }
+        }
+        if (flag) {
+            console.log(number);
+            soLuongSNT++;
+        }
+        number++;
+    }
+
+</script>
+</body>
+</html>

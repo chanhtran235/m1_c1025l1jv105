@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3809c035-3d58-471e-b993-ec0501e75872" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss10_loop/game_doan_so.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_loop/so_nguyen_to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_loop/tam_giac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_array/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6/demo_chuyen_doi_tien_te.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7/may_may_tinh_don_gian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7/may_tinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4_git_html/bai_tap/cv_ca_nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/cv_ca_nhan.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="35CJnyJnuM0p61rvER8DzebuIMG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Unnamed.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/codegym/demo 2025/module1/C10/ss12_array/demo.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/C10/ss12_array/demo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3809c035-3d58-471e-b993-ec0501e75872" name="Changes" comment="" />
+      <created>1762608291048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762608291048</updated>
+      <workItem from="1762608292097" duration="653000" />
+      <workItem from="1762739869650" duration="17000" />
+      <workItem from="1762866509428" duration="4297000" />
+      <workItem from="1763039265763" duration="2695000" />
+      <workItem from="1763084498105" duration="132000" />
+      <workItem from="1763471259082" duration="3271000" />
+      <workItem from="1764073395917" duration="1214000" />
+      <workItem from="1764232391707" duration="130000" />
+      <workItem from="1764251592074" duration="2385000" />
+      <workItem from="1764304783979" duration="25000" />
+      <workItem from="1764422032911" duration="2295000" />
+      <workItem from="1764556430791" duration="20000" />
+      <workItem from="1764681194555" duration="2077000" />
+      <workItem from="1764726238475" duration="11000" />
+      <workItem from="1764848359072" duration="2344000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ss12_array/demo.html</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="playGame()"> Chơi game</button>
+<script>
+    function playGame() {
+        // min và max
+        let min = +prompt("nhập giá trị nhỏ nhất");
+        let max = +prompt("nhập giá trị lớn nhất");
+        // min =5 ;max =20;
+        // hàm random trong js : tra một số ngẫu nhiên từ 0 đến 1 => 0.1256 => 0.987
+        // tạo ngẫu nhiên một số nằm trong khoảng từ min <-> max
+        let random = min + Math.ceil(Math.random() * (max - min));
+        alert(" số ngẫu nhiên từ min đến max là: " + random);
+        for (let i = 0; i < 3; i++) {
+            let yourNumber = +prompt("nhập số dự đoán lần thứ : "+(i+1));
+            if (yourNumber === random) {
+                alert("Bạn đã đoán đúng!");
+                break;
+            } else if (yourNumber < random) {
+                alert("Số bạn nhập nhỏ hơn kết quả");
+            } else {
+                alert(" Số bạn nhập lớn hơn kết quả ");
+            }
+            if (i===2){
+                alert("Bạn đã hết số lần đoán")
+            }
+        }
+    }
+</script>
+</body>
+</html>
