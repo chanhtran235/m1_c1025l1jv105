@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Yêu cầu chương trình
+    // yc1: kiểm tra một số có phải là SNT?
+    // yc2: Tính tổng các SNT có trong mảng
+    // yc3: In ra 20 SNT:
+     // khai báo /  định nghĩa hàm
+
+    function checkPrime(number) {
+        if (number < 2) {
+            return false;
+        }
+        let isPrime = true;
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                isPrime = false;
+            }
+        }
+        return isPrime;
+    }
+    // yc1
+
+    let number1 = +prompt("nhập số cần kiểm tra");
+
+    let result = checkPrime(number1);
+    (result) ? alert("là SNT") : alert("Ko phải SNT");
+
+    // yc2
+    let array = [2, 6, 8, 5, 11];
+    let sum = 0;
+    for (let k = 0; k < array.length; k++) {
+        if (checkPrime(array[k])) {
+            sum += array[k];
+        }
+    }
+    alert("Tổng các số nguyên tố có trong mảng : " + sum);
+    // yc3:
+    let n = 2;
+    let countPrime = 0;
+    while (countPrime < 20) {
+        if (checkPrime(n)) {
+            console.log(n);
+            countPrime++;
+        }
+        n++;
+    }
+
+</script>
+</body>
+</html>

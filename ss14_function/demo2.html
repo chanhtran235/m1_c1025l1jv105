@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button onclick="showMessage2('Codegym')">Click</button>-->
+<script>
+    // function showMessage(){
+    //     alert("Hello everybody");
+    // }
+    // // luôn trả về một kết  quả giống nhau
+    // showMessage2("Chánh");
+    // function showMessage2(mess){
+    //     alert("Hello "+ mess);
+    // }
+    // let tong =10;
+    // function sum1(a,b){
+    //     let tong =a+b;
+    // }
+    //
+    // alert(tong);
+    // function sum2(a,b){
+    //     let tong = a+b;
+    //     return tong;
+    // }
+    // sum1(2,3);
+    // let result = sum2(5,6);
+    //  alert(result);
+    // hàm có return tái sử dụng cáo hơn
+    // chỉ sử dụng hàm sum tính tổng 4 số
+    // let r1= sum1(10,20);
+    // let r2 = sum1(30,40);
+    // let r = sum2(r1,r2);
+    // alert("kết quả 4 số" + r);
+
+
+    let str = "  Hello Codegym Chanh   "
+    // ký tự : H, e,l,..
+    // từ (world) từ phân cách bởi khoảng trắng : Hello, CodeGym
+    // bài tập Tiến Hỏi (tìm từ trong một chuỗi)
+
+    // sử dụng hàm split của string
+    str = str.trim();
+    let array = str.split(" ");
+    // duyet mảng => đếm phàn tử khác rỗng
+
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] !== "") {
+            count++;
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>
