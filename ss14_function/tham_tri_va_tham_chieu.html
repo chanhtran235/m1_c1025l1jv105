@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // khi gọi hàm =>truyền giá trị( đối số) cham hàm
+    // + Nếu đối số có kiểu nguyên thuỷ (number,string,boolean, null, undefined thì gọi là tham trị
+    //   => khi thay đổi giá trị bên trong hàm thì ngoài hàm không thay đổi
+    // + Nếu đối số có kiểu  dữ liệu là tham chiếu ( đối tượng, array) thì gọi là tham chiếu
+    //  => khi thay đổi bên trong hàm thì ngoài hàm cũng thay đổi
+    //
+    // function changeValue(a){
+    //     a++;
+    //     console.log("trong hàm : "+ a);
+    // }
+    // let b = 10;
+    // changeValue(b);
+    // console.log("ngoài hàm : "+ b);
+
+    // function changeArray(arr){
+    //     arr= [100,200];
+    //     console.log("Trong hàm: "+ arr);
+    // }
+    //
+    // let array = [1,2];// kiểu tham chiêu (đối tượng)
+    // changeArray(array);
+    // console.log("ngoài hàm : "+ array);
+
+    // let a =10;
+    // let b=a;
+    // a++;
+    // console.log("a :"+a);
+    // console.log("b :"+b);
+    let arrayA = [1,2];
+    let arrayB = arrayA;
+    // arrayA[0]=100;
+    // console.log("arrayA: "+arrayA);
+    // console.log("arrayB: "+arrayB);
+    // vòng lặp duyệt qua A => copy từng pt của A sang cho C
+    // let arrayC = [...arrayA]; // spread operator
+    // for (let i = 0; i <arrayA.length ; i++) {
+    //     arrayC.push(arrayA[i]);
+    // }
+    // arrayA[0]=100;
+    // console.log("arrayA: "+arrayA);
+    // console.log("arrayC: "+arrayC);
+     let student ={
+         id: 1,
+         name: "chánh"
+     }
+    // let array =[2,3,4,5,6]
+    //  function daoMang(arr){
+    //     let arrResult=[];
+    //      for (let i = arr.length-1; i>=0 ; i--) {
+    //          arrResult.push(arr[i]);
+    //      }
+    //      return arrResult;
+    //  }
+    // let kq= daoMang(array);
+    // alert(kq);
+    // alert("mảng cũ: "+ array)
+    // định nghĩa hàm có 2 cách
+    // + declare funtion
+    function sum(a,b){
+        return a+b;
+    }
+
+    sum(2,3);
+    // express function:
+    const sum1 = function (a,b){
+        return a+b;
+    }
+    sum1(10,2);
+    // Arrow function: hàm mũi tên
+    const sum2 =(a,b)=>{
+        //
+        return a+b;
+    }
+    const sum3= (a,b)=>a+b;
+
+    let arr =[2,5,4,6];
+
+    arr.sort(function (a,b){
+        return a-b;
+    });
+    arr.sort((a,b)=>a-b);
+
+</script>
+</body>
+</html>

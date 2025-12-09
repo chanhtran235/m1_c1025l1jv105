@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // viết hàm có tham số truyền vào là môt mảng  số nguyên và hàm tính tổng các số nguyên tố có trong mảng
+   //  let array = [2,4,3,6,7];
+   //
+   // let sum= sumPrime(array);
+   // alert(sum);
+
+
+    function sumPrime(arr){
+        let sum =0;
+        for (let i = 0; i <arr.length ; i++) {
+            if(isPrime(arr[i])){
+                sum  += arr[i];
+            }
+        }
+        return sum;
+
+        function isPrime(number){
+            if (number<2){
+                return false;
+            }
+            for (let i = 2; i <number ; i++) {
+                if (number%i===0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+</script>
+</body>
+</html>
