@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // hàm có return và không có return.
+    // hàm có return thì kết quả xử lý trog hàm được trả về cho nơi gọi hàm
+    // và giá tri đó có thể thực cho các bước tính tính toán tiếp theo
+
+
+    function sum1(a,b){
+        alert(a+b);
+    }
+    function sum2(a,b){
+        return a+b;
+    }
+
+    // tính tổng 2 cho tôi sau đó in ra dưới dạng alert,  hoặc consle... tuy theo yêu cầu
+    // tính tổng 4 số không sử dụng phép cộng  mà chỉ sử dụng hàm tính tổng 2 số
+
+
+    // sum1(10,20);
+    let a =10;
+    let b =20
+    let c =30
+    let d =40
+    let tong=sum1(sum1(a,b),sum1(c,d));
+    alert(tong);
+
+
+
+
+
+</script>
+</body>
+</html>

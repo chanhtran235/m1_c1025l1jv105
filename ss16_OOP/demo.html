@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tạo đối tượng sinh viên
+    // + Khai báo đối tượng bằng object literal
+    //
+    // let student1 = {
+    //     id : 1,
+    //     name: "chánh1",
+    //     gender: true, // name,
+    //     study: function (subject){
+    //         console.log("học viên " +this.name + " đang học môn: "+ subject)
+    //     }
+    // }
+    // let student2 = {
+    //     id : 2,
+    //     name: "chánh2",
+    //     gender: true, // name,
+    //     study: function (subject){
+    //         console.log("học viên " +this.name + " đang học môn: "+ subject)
+    //     }
+    // }
+    // sử dụng
+    // lấy thông tin tên của sinh viên 1;
+    // console.log(student1.name);
+    // student1.study("Tiếng anh");
+    // student1.name = "Hải";
+    // console.log(student1.name);
+    // student1.study("toán");
+
+    // class:
+    // tạo class sinh viên bằng từ khoá class => phiên bản ES6 => js 2015;
+    // => tên class sử dụng quy tắc PascalCase
+    class Student {
+        id;
+        name;
+        gender;
+        constructor(id,name,gender) {
+            this.id =id;
+            this.name =name;
+            this.gender =gender;
+        }
+        study(subject){
+            console.log("học viên " +this.name + " đang học môn: "+ subject)
+        }
+    }
+
+    let sinhVien1 = new Student(1,"Hải1",true);
+    let sinhVien2 = new Student(2,"Hà",false);
+
+    console.log("id : "+ sinhVien1.id);
+    console.log("name : "+ sinhVien1.name);
+    sinhVien1.study("Lập trình")
+
+    // sử dùng funcion tạo class
+    function SinhVien(ma,ten,gioTinh){
+        this.id = ma ;
+        this.name = ten;
+        this.gender = gioTinh;
+        this.study = function (subject){
+            console.log("học viên " +this.name + " đang học môn: "+ subject)
+        }
+    }
+
+    let sv1 = new SinhVien(3,"Trung",true);
+    let sv2 = new SinhVien(4,"Sự",false);
+
+    function Circle(radius) {
+
+        this.radius = radius;
+
+        this.getRadius = function() {
+            return radius;
+        }
+
+        this.getArea = function() {
+            return Math.PI * radius * radius;
+        }
+
+    }
+    class HinhTron {
+        radius;
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        getRadius(){
+            return this.radius;
+        }
+
+        getArea(){
+            return Math.PI * this.radius * this.radius;
+        }
+    }
+
+    let c1 = new HinhTron(10);
+    let c2 = new HinhTron(10);
+
+
+    console.log("bán kính: "+ c1.radius);
+    console.log("bán kính: "+ c1.getRadius());
+    console.log("Diên tích: "+ c1.getArea());
+    console.log(c2.getArea());
+</script>
+</body>
+</html>
