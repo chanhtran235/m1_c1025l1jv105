@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Animal {
+        name;
+        weight;
+        speed;
+        constructor(name,weight,speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+        // thay đổi thuộc tính name;
+        setName(name){
+            this.name = name;
+        }
+        getName(){
+            return this.name;
+        }
+        setWeight(weight){
+            this.weight = weight;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setSpeed(speed){
+            this.speed = speed;
+        }
+        getSpeed(){
+            return this.speed;
+        }
+
+        say(text){
+            // chưa biết kếu thế nào
+            // phương thức trừu tượng:
+        }
+
+    }
+
+    class Rat extends Animal {
+        status; // true => sống ; false => chết
+        constructor(name,weight,speed,status) {
+            super(name,weight,speed);
+            this.status = status;
+        }
+        setStatus(status){
+            this.status =status;
+        }
+        getStatus(){
+            return this.status;
+        }
+
+        say(text) {
+            console.log(this.getName()+" chit chit: "+ text);
+        }
+
+    }
+    class Cat extends Animal {
+        constructor(name,weight,speed) {
+            super(name,weight,speed);
+        }
+        say(text) {
+            console.log(this.getName()+" meo meo: "+ text);
+        }
+        eatMouse(mouse){
+            if (mouse.getStatus()){
+                this.say("--Còn sống ăn thôi--");
+                this.setWeight(this.weight+mouse.getWeight())
+            }else {
+                this.say("--Chết rồi tao không ăn---")
+            }
+        }
+        catchMouse(mouse){
+            if (this.speed>mouse.getSpeed()){
+                this.say("---Tao bắt được rồi ------");
+                this.eatMouse(mouse);
+            }else {
+                mouse.say("-------Đố bắt được tao------")
+            }
+        }
+
+    }
+// sử dụng class làm kịch bản mèo bắt chuột
+
+    let jerry1 = new Rat("Jerry1",1,5,true);// Jerrry, 1 kg, 5m/s, còn sống.
+    let jerry2 = new Rat("Jerry2",1,15,true);// Jerrry, 1 kg, 5m/s, còn sống.
+    let jerry3 = new Rat("Jerry3",1,0,false);// Jerrry, 1 kg, 5m/s, còn sống.
+    let jerry4 = new Rat("Jerry5",1,7,true);// Jerrry, 1 kg, 5m/s, còn sống.
+    let jerry5 = new Rat("Jerry5",1,8,true);// Jerrry, 1 kg, 5m/s, còn sống.
+    let longChuot = [jerry1,jerry2,jerry3,jerry4,jerry5];
+    let tom = new Cat("Tom",10,10);
+    for (let i = 0; i <longChuot.length ; i++) {
+        tom.catchMouse(longChuot[i]);
+    }
+    console.log(tom.getWeight());
+
+</script>
+
+</body>
+</html>
