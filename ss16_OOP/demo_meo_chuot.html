@@ -42,6 +42,7 @@
 
     }
 
+     // is-a
     class Rat extends Animal {
         status; // true => sống ; false => chết
         constructor(name,weight,speed,status) {
@@ -67,6 +68,7 @@
         say(text) {
             console.log(this.getName()+" meo meo: "+ text);
         }
+
         eatMouse(mouse){
             if (mouse.getStatus()){
                 this.say("--Còn sống ăn thôi--");

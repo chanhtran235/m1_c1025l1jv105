@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="batCongTac()">Bật</button>
+<button onclick="tatCongTac()">Tắt</button>
+<script>
+  class Lamp{
+    status;
+    constructor() {
+      this.status =false;
+    }
+    turnOn(){
+      this.status = true;
+    }
+    turnOff(){
+      this.status = false;
+    }
+  }
+
+  class Switch {
+    status;
+    lamp; // has -a
+    constructor() {
+      this.status = false;
+      this.lamp = null;
+    }
+    connectToLamp(lamp){
+      this.lamp = lamp;
+    }
+    switchOff(){
+      if (this.lamp!=null){
+        this.lamp.turnOff();
+        this.status = false;
+      }else {
+        console.log("--Chưa kêt nối bóng đèn");
+      }
+
+    }
+    switchOn(){
+      if (this.lamp!=null){
+        this.lamp.turnOn();
+        this.status = true;
+      }else {
+        console.log("--Chưa kêt nối bóng đèn");
+      }
+    }
+  }
+
+  let bongDen = new Lamp();
+  let congTac = new Switch();
+  congTac.connectToLamp(bongDen);
+  function batCongTac(){
+    if (congTac.status){
+      console.log(" Công tắc đã bật rồi ")
+    }else {
+      congTac.switchOn()
+    }
+    console.log("Bóng đèn : "+ bongDen.status)
+  }
+  function tatCongTac(){
+    if (!congTac.status){
+      console.log(" Công tắc đã tăt rồi ")
+    }else {
+      congTac.switchOff()
+    }
+    console.log("Bóng đèn : "+ bongDen.status)
+  }
+  // congTac.switchOn();
+  // console.log("bóng đèn : " +bongDen.status);
+  // congTac.switchOff();
+  // console.log("bóng đèn : " +bongDen.status);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="700" height="500" style="border: 1px solid red"></canvas>
+<script>
+    class Rectangle{
+        width;
+        height;
+        constructor(width,height) {
+           this.width = width;
+           this.height = height;
+        }
+        getArea(){
+            return this.width*this.height;
+        }
+        display(x,y,color){
+            const  canvas = document.getElementById("canvas");
+            const context = canvas.getContext("2d");
+            context.strokeStyle=color;
+            context.strokeRect(x,y,this.width,this.height);
+        }
+
+    }
+    let hcn1 = new Rectangle(50,100);
+    let hcn2 = new Rectangle(50,50);
+    hcn1.display(350,0,'blue');
+    hcn2.display(350,200,'red');
+</script>
+</body>
+</html>
