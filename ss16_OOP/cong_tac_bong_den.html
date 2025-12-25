@@ -8,11 +8,20 @@
 <button onclick="batCongTac()">Bật</button>
 <button onclick="tatCongTac()">Tắt</button>
 <script>
+    // báo đóng/ đóng gói => Encapsulation: che dấu thuộc biên trong của đối tuong
+    // + Không cho phép truy cập trực tiếp vào thuộc tính
   class Lamp{
-    status;
+
     constructor() {
       this.status =false;
     }
+    setStatus(status){
+        this.status = status;
+    }
+    getStatus(){
+        return this.status;
+    }
+
     turnOn(){
       this.status = true;
     }
@@ -51,6 +60,11 @@
   }
 
   let bongDen = new Lamp();
+  // thay đổi
+
+  bongDen.setStatus(true);
+  // lấy ra hiển thi
+    console.log(bongDen.getStatus())
   let congTac = new Switch();
   congTac.connectToLamp(bongDen);
   function batCongTac(){
@@ -67,7 +81,7 @@
     }else {
       congTac.switchOff()
     }
-    console.log("Bóng đèn : "+ bongDen.status)
+    console.log("Bóng đèn : "+ bongDen.getStatus())
   }
   // congTac.switchOn();
   // console.log("bóng đèn : " +bongDen.status);
